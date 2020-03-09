@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:journal/MyDialog.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class MyJournal extends StatefulWidget {
+  MyJournal({Key key, /*this.title*/}) : super(key: key);
 
-  final String title;
+  //final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MyJournalState createState() => _MyJournalState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyJournalState extends State<MyJournal> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Журнал"),
       ),
       body: Column(
         children: <Widget>[
